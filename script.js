@@ -15,9 +15,14 @@ function operand(operator, arg1, arg2) {
     if (operator == "+") {
         return add(arg1, arg2)
     }
-    else if(operator == "-") {
-        return subtract(arg1, arg2)
-    }
+ else if (operator == "-") {
+    return subtract(arg1, arg2)
+} 
+else if (operator == "*") {
+    return multiply(arg1, arg2)
 }
-
+else if (operator == "/") {
+    return divide(arg1, arg2)
+}
+}
 console.log(operand("-", 5, 6))
